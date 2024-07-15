@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black; /* background color */
+    margin-top: 150px; /* Adjust to account for fixed header */
+}
+
+/* HEADER */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: #0e0e0e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.navbar a {
+    font-size: 22px;
+    color: #ff9000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: .3s;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: #ff9000;
+    text-decoration: underline;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: italic;
+    text-decoration: none;
+    color: #ff9000;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/*  END OF HEADER */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: #0e0e0e;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #ff9000;
+    overflow: hidden;
+}
+
+.image-container {
+    flex: 1;
+    
+}
+
+.profile-image {
+    width: 100%;
+    height: 200%;
+    object-fit: cover;
+    margin-bottom: -7px;
+}
+
+.content-container {
+    flex: 1;
+    padding: 40px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    color: #ff9000;
+}
+
+.title-underline {
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: #ff9000;
+    margin-right: 10px;
+    color: #ff9000;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ff9000;
+    margin-bottom: 20px;
+}
+
+.skills {
+    margin-bottom: 20px;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    color: #ff9000;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 10px;
+    background-color: #ff9000;
+    width: 70%;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    background-color: #ff9000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.learn-more-btn:hover {
+    background-color: #e07c00;
+}
